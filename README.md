@@ -1,4 +1,4 @@
-# -WEBSYSANDTECH-ASSET-TRACKER-GROUP-3-PROJECT�
+# -WEBSYSANDTECH-ASSET-TRACKER-GROUP-3-PROJECT
 
 A beautiful, modern web application to track your personal assets and calculate your net worth in Philippine Pesos. Built in collaboration with Miguel Dominic E. Roa, Ian Federico Santiago, and Samuel Peter Ocampo as a Mapua Malayan Digital College project for our Web Systems and Technology subject.
 
