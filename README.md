@@ -122,7 +122,7 @@ To use a different currency:
 
 ### Modifying Colors
 
-All colors are defined as CSS custom properties in `:root` at the top of `styles.css`. Simply modify these variables to change the color scheme.
+All colors are defined as CSS custom properties in `:root` at the top of `formats.css`. Simply modify these variables to change the color scheme.
 
 ## 📄 License
 
