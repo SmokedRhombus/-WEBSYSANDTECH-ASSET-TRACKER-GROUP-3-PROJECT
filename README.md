@@ -287,17 +287,6 @@ This is an academic project, but suggestions and feedback are welcome! Feel free
 - **Team Size**: 3 developers
 - **License**: MIT
 
-## 📸 Screenshots
-
-### Home Page
-Beautiful welcome interface with feature highlights and real-time net worth display.
-
-### Assets Page
-Comprehensive asset management with four categories and intuitive forms.
-
-### About Page
-Detailed project information, team profiles, and technical documentation.
-
 ---
 
 **Built with ❤️ by Group 3**  
