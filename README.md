@@ -15,6 +15,7 @@ This project was developed as part of the **Web Systems and Technology** course 
 - Miguel Dominic E. Roa
 - Ian Federico Santiago
 - Samuel Peter Ocampo
+- Ralph Matthew Paran
 
 ## 🌟 Features
 
