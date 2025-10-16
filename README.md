@@ -244,17 +244,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Philippine peso localization standards
 - Open source community for inspiration
 
-## 📞 Support & Contact
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/yourusername/net-worth-tracker/issues) page
-2. Create a new issue with detailed information:
-   - Browser version
-   - Steps to reproduce
-   - Expected vs actual behavior
-   - Screenshots (if applicable)
-
 ## 🚧 Known Limitations
 
 - Data is stored locally (not synced across devices)
