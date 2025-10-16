@@ -12,9 +12,18 @@ class NetWorthTracker {
             cash: []
         };
         
-        this.initializeEventListeners();
         this.loadFromStorage();
-        this.updateDisplay();
+        
+        // Check if we're on the assets page (has forms)
+        const isAssetsPage = document.getElementById('realEstateForm') !== null;
+        
+        if (isAssetsPage) {
+            this.initializeEventListeners();
+            this.updateDisplay();
+        } else {
+            // On home or about page, just update the net worth display
+            this.updateNetWorth();
+        }
     }
 
     initializeEventListeners() {
@@ -91,7 +100,7 @@ class NetWorthTracker {
         if (assets.length === 0) {
             listElement.innerHTML = `
                 <div class="empty-state">
-                    <div class="empty-icon">📭</div>
+                    <div class="empty-icon">🔭</div>
                     <p>No assets added yet</p>
                 </div>
             `;
@@ -114,7 +123,11 @@ class NetWorthTracker {
 
     updateNetWorth() {
         const total = Object.values(this.assets).flat().reduce((sum, asset) => sum + asset.value, 0);
-        document.getElementById('totalNetWorth').textContent = `₱${total.toLocaleString('en-PH', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+        const netWorthElement = document.getElementById('totalNetWorth');
+        
+        if (netWorthElement) {
+            netWorthElement.textContent = `₱${total.toLocaleString('en-PH', {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+        }
     }
 
     saveToStorage() {
@@ -142,8 +155,11 @@ class NetWorthTracker {
 
 const tracker = new NetWorthTracker();
 
+// Sample data - only add if on assets page and no data exists
 setTimeout(() => {
-    if (Object.values(tracker.assets).flat().length === 0) {
+    const isAssetsPage = document.getElementById('realEstateForm') !== null;
+    
+    if (isAssetsPage && Object.values(tracker.assets).flat().length === 0) {
         tracker.assets.realEstate.push({
             id: 1,
             name: "Primary Residence",
@@ -173,5 +189,6 @@ setTimeout(() => {
         });
         
         tracker.updateDisplay();
+        tracker.saveToStorage();
     }
 }, 500);
