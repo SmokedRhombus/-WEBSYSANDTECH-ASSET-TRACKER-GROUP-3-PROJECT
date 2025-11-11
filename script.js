@@ -2,6 +2,7 @@
 // Miguel Dominic E. Roa
 // Ian Federico Santiago
 // Samuel Peter Ocampo
+// Ralph Matthew Paran
 
 class NetWorthTracker {
     constructor() {
